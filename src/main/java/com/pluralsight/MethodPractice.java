@@ -24,15 +24,23 @@ public class MethodPractice {
         int result = add(2,5);
         System.out.println(result);
 
+        String fullName = formatName("Ajith", "Viathyam");
+        System.out.println(fullName);
+
+
     }
+
+
+    public static String formatName(String first, String last){
+        String fullName = String.format("%s %s", first, last);
+        return fullName;
+    }
+
 
     public static int add(int a, int b){
         int sum = a + b;
         return sum;
     }
-
-
-
 
     public static String fish(){
 //        System.out.println("Get out fishing rod");
@@ -51,6 +59,7 @@ public class MethodPractice {
     public static void sayHi(String firstName){
         System.out.println("Hi " + firstName);
     }
+
 
 
 
