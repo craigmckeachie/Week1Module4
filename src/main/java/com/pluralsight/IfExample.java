@@ -7,6 +7,10 @@ public class IfExample {
         int age = 76;
 
 
+
+
+
+
         if ( age>= 21 && age <=75 ){
             System.out.println("You can enter the bar.");
         }else if(age >= 75){
