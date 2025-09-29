@@ -4,23 +4,30 @@ package com.pluralsight;
 import java.util.Scanner;
 
 public class ConditionalExercise {
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        getAndDisplayAge();
+        getAndDisplayGrade();
 
-//        // Ask the user for their age
-//        System.out.print("Enter your age: ");
-//        int age = scanner.nextInt();
-//
-//        // TODO: Write an if statement that checks if age is >= 18
-//        // If true, print "You are an adult."
-//
-//        if (age >= 18) {
-//            System.out.println("You are an adult.");
-//        } else {
-//            System.out.println("You are not an adult yet.");
-//        }
+    }
 
+    private static void getAndDisplayAge() {
+        // Ask the user for their age
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
 
+        // TODO: Write an if statement that checks if age is >= 18
+        // If true, print "You are an adult."
+
+        if (age >= 18) {
+            System.out.println("You are an adult.");
+        } else {
+            System.out.println("You are not an adult yet.");
+        }
+    }
+
+    private static void getAndDisplayGrade() {
         // Ask the user for their grade
         System.out.print("Enter your grade (A-F): ");
         String grade = scanner.next();
@@ -40,6 +47,7 @@ public class ConditionalExercise {
         } else {
             System.out.println("Invalid grade");
         }
-
     }
+
+
 }
